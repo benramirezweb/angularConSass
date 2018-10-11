@@ -30,7 +30,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Create Angular project with SASS
 
-To create a new Angular project that uses SASS to generate the styles of your project just use the follow command:
+To create a new Angular project, that uses SASS to generate use the follow command:
 
 `ng new my-sassy-app --style=scss`
 
@@ -44,3 +44,11 @@ You also can use this commands to use SCSS or LESS:
 The `.angular-cli.json` file has been changed in this line:
 
 `"styles": ["sass/styles.sass"],`
+
+To update the SASS file path.
+
+## SASS files architecture
+
+There is a sass folder that contains the main SASS file called `styles.sass`.
+
+This file import the others two SASS files called `_variables.sass` and `_mixins.sass` that contains all the dinamic values to create the styles of the project.
