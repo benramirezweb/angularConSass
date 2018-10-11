@@ -1,4 +1,6 @@
-# AngularConSass
+# Angular with SASS project
+
+## AngularConSass
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
 
@@ -25,3 +27,20 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Create Angular project with SASS
+
+To create a new Angular project that uses SASS to generate the styles of your project just use the follow command:
+
+`ng new my-sassy-app --style=scss`
+
+You also can use this commands to use SCSS or LESS:
+
+`ng new my-sassy-app --style=scss`
+`ng new my-sassy-app --style=less`
+
+## Changes in .angular-cli.json
+
+The `.angular-cli.json` file has been changed in this line:
+
+`"styles": ["sass/styles.sass"],`
