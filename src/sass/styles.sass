@@ -1,0 +1,42 @@
+@import './variables'
+@import './mixins'
+*
+    margin: 0px
+    padding: 0px
+    +box
+body
+    background: $bgColor
+    color: $textoGris
+    font-family: $krub
+.page
+    +flex
+    +flexJustify(center)
+    +flexAlign(center)
+    width: 100vw
+    height: 100vh
+.page1
+    +gradient(to top, $verde1, $verde2)
+    h1
+        color: $verde2
+.page2
+    +gradient(to bottom, $morado1, $morado2)
+    h1
+        color: $morado1
+.page3
+    +gradient(to top, $naranja1, $naranja2)
+    h1
+        color: $naranja2
+@media only screen and (max-width: $breakpoint-tb)
+    .page1
+        +gradient(to top, $azul1, $azul2)
+        h1
+            color: $azul1  
+    .page2
+        +gradient(to top, $rojo1, $rojo2)
+        h1
+            color: $rojo2
+    .page3
+        +gradient(to bottom, $purpura1, $purpura2)
+        h1
+            color: $purpura1
+    
